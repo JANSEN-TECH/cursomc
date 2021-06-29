@@ -14,12 +14,11 @@ public class CategoriaService {
 	private CategoriaRepository repo;
 	
 	public Categoria find(Integer id) {
-		Optional<Categoria> obj = repo.findById(id);
+		Optional<Categoria> obj = Optional.empty();
 		return obj.orElse(null);
 	}
 
 	public Categoria buscar(Integer id) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 }

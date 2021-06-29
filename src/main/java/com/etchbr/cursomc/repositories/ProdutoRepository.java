@@ -9,8 +9,8 @@ import com.etchbr.cursomc.domain.Categoria;
 import com.etchbr.cursomc.domain.Produto;
 
 @Repository
-public interface CategoriaRepository extends JpaRepository< Produto, Integer>{
+public interface ProdutoRepository extends JpaRepository< Categoria, Integer>{
 
-	void saveAll(List<Categoria> asList);
+	void saveAll(List<Produto> asList);
 
 }
